@@ -4,6 +4,7 @@ import bird from "./images/bird.svg";
 import { ClickCounter } from "./components/ClickCounter";
 
 export const App = () => {
+  const num = 0;
   return (
     <>
       <h1>BYE! 123 Just do it!</h1>
