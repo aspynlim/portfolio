@@ -1,10 +1,9 @@
-import "./scss/styles.scss";
-import image from "./images/react.png";
-import bird from "./images/bird.svg";
-import { ClickCounter } from "./components/ClickCounter";
+import './scss/styles.scss'
+import image from './images/react.png'
+import bird from './images/bird.svg'
+import { ClickCounter } from './components/ClickCounter'
 
 export const App = () => {
-  const num = 0;
   return (
     <>
       <h1>BYE! 123 Just do it!</h1>
@@ -14,5 +13,5 @@ export const App = () => {
       <img src={bird} alt="Bird" width="200" />
       <ClickCounter />
     </>
-  );
-};
+  )
+}
