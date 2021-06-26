@@ -1,0 +1,10 @@
+$base-color: #c6538c;
+
+#root {
+  background: $base-color;
+  color: white;
+  font: {
+    size: 0.5em;
+    weight: bold;
+  }
+}

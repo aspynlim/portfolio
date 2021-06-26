@@ -1,3 +1,13 @@
+import "./scss/styles.scss";
+import image from "./images/react.png";
+import bird from "./images/bird.svg";
+
 export const App = () => {
-  return <h1>HELLO</h1>
-}
+  return (
+    <>
+      <h1>HELLO! 123 Just do it!</h1>
+      <img src={image} alt="React Logo" width="200" />
+      <img src={bird} alt="Bird" width="200" />
+    </>
+  );
+};
