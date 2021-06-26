@@ -1,10 +1,6 @@
-$base-color: darkgray;
+@import '_resets';
+@import '_variables';
 
-#root {
-  background: $base-color;
-  color: white;
-  font: {
-    size: 0.5em;
-    weight: bold;
-  }
+h1 {
+  color: $brand-color;
 }
