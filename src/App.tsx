@@ -3,7 +3,8 @@ import { Route, Switch } from 'react-router-dom'
 
 import Main from './pages/Main'
 import AboutMe from './pages/AboutMe'
-import Projects from './pages/Projects'
+import ProjectsMain from './pages/ProjectsMain'
+
 import MainNav from './components/layout/MainNav'
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           <Main />
         </Route>
         <Route path="/projects">
-          <Projects />
+          <ProjectsMain />
         </Route>
         <Route path="/about-me">
           <AboutMe />

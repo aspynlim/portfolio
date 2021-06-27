@@ -1,6 +1,7 @@
 @import '_resets';
 @import '_variables';
+@import '_fonts';
 
-h1 {
-  color: $brand-color;
+body {
+  font-family: 'Roboto', sans-serif;
 }
