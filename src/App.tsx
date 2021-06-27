@@ -1,9 +1,24 @@
-import './scss/styles.scss'
+import './dist/scss/styles.scss'
+import { Route, Switch } from 'react-router-dom'
+
+import Main from './pages/Main'
+import AboutMe from './pages/AboutMe'
+import Projects from './pages/Projects'
 
 function App() {
   return (
     <div>
-      <h1>Hyejung(Aspyn) Lim</h1>
+      <Switch>
+        <Route path="/" exact>
+          <Main />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+        <Route path="/about-me">
+          <AboutMe />
+        </Route>
+      </Switch>
     </div>
   )
 }
