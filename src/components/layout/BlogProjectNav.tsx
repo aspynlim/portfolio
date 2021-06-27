@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
 
-// import classes from './BlogProjectNav.module.scss'
+import classes from './BlogProjectNav.module.scss'
 
 function BlogProjectNav() {
   return (
-    // <header className="{classes.header}">
-    <header>
+    <header className={classes.header}>
       <nav>
         <ul>
           <li>
