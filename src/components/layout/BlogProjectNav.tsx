@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import classes from './BlogProjectNav.module.scss'
+import classes from './scss/BlogProjectNav.module.scss'
 
 function BlogProjectNav() {
   return (
@@ -8,17 +8,19 @@ function BlogProjectNav() {
       <nav>
         <ul>
           <li>
-            <Link to="/projects/blog">Blog Project</Link>
+            <Link to="/projects/blog">Blog</Link>
           </li>
-          <li>
-            <Link to="/projects/blog/all">All</Link>
-          </li>
-          <li>
-            <Link to="/projects/blog/new">NEW</Link>
-          </li>
-          <li>
-            <Link to="/projects/blog/favorites">Favorites</Link>
-          </li>
+          <div className={classes.rightList}>
+            <li>
+              <Link to="/projects/blog/all">All</Link>
+            </li>
+            <li>
+              <Link to="/projects/blog/new">NEW</Link>
+            </li>
+            <li>
+              <Link to="/projects/blog/favorites">Favorites</Link>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>

@@ -1,11 +1,6 @@
+@import '_commons';
+@import '_fonts';
+@import '_mixins';
+@import '_nav';
 @import '_resets';
 @import '_variables';
-@import '_fonts';
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-div {
-  color: green;
-}
