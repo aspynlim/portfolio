@@ -11,6 +11,15 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(ts|js)x?$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+        ],
+      },
+      {
         test: /\.scss$/,
         use: [
           { loader: 'style-loader' }, // to inject the result into the DOM as a style block
@@ -30,15 +39,6 @@ module.exports = {
         test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
         type: 'asset/inline',
       },
-      {
-        test: /\.(ts|js)x?$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader',
-          },
-        ],
-      },
     ],
   },
   output: {
@@ -54,7 +54,7 @@ module.exports = {
       template: path.resolve(__dirname, '..', './index.html'),
     }),
     new CopyPlugin({
-      patterns: [{ from: 'src', to: 'dist ' }],
+      patterns: [{ from: 'src', to: 'dist' }],
     }),
   ],
 }
