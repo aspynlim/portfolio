@@ -49,6 +49,15 @@ Hyejung Lim's Portfolio as of 2021
 
 - [Changing a commit message](https://docs.github.com/en/github/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message)
 
----
+## 3-2 GitHub
+
+- [Deploying a React app to GitHub Pages](https://www.pluralsight.com/guides/deploying-github-pages-with-create-react-app)
+
+* [Fixing NPM errors]
+
+- `sudo rm -rf /usr/local/lib/node_modules/` & Installed Node by running the package that I downloaded from the offcial [website](https://nodejs.org/en/download/)
+- Installing node & npm by using Homebrew didn't work
+  - `brew update` => `brew uninstall node` & `brew install node` [출처](https://stackoverflow.com/a/46048072/10021131)
+  - `sudo chmod -R 777 /usr/local/lib` => `brew postinstall node` [출처](https://stackoverflow.com/a/46048072/10021131)
 
 2021 © Aspyn Lim
