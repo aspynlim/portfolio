@@ -31,7 +31,6 @@ const DUMMY_DATA: BlogPost[] = [
 function AllBlogPosts() {
   return (
     <div>
-      <h1>All Blog Posts</h1>
       <BlogPostList items={DUMMY_DATA} />
     </div>
   )

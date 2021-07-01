@@ -4,13 +4,11 @@ import { Route, Switch } from 'react-router-dom'
 import Main from './pages/Main'
 import AboutMe from './pages/AboutMe'
 import ProjectsMain from './pages/ProjectsMain'
-
-import MainNav from './components/layout/MainNav'
+import Layout from './components/layout/Layout'
 
 function App() {
   return (
-    <div>
-      <MainNav />
+    <Layout>
       <Switch>
         <Route path="/" exact>
           <Main />
@@ -22,7 +20,7 @@ function App() {
           <AboutMe />
         </Route>
       </Switch>
-    </div>
+    </Layout>
   )
 }
 
