@@ -1,10 +1,9 @@
+import classes from './scss/Main.module.scss'
+
 function Main() {
   return (
-    <div>
+    <div className={classes.mainBg}>
       <h1>Hyejung(Aspyn) Lim</h1>
-      <p>
-        HELLO! 123 Just do it! {process.env.NODE_ENV} {process.env.name}
-      </p>
     </div>
   )
 }

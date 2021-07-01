@@ -10,7 +10,6 @@ function MainNav() {
           <li>
             <Link to="/">
               <img src={logo} alt="Website Logo" width="30" />
-              {/* ASPYN LIM */}
             </Link>
           </li>
           <div className={classes.rightList}>
