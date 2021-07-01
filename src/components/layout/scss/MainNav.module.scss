@@ -1,12 +1,11 @@
 @import '../../../dist/scss/styles';
 
-.header {
-  background: $brand-color-brighter-2;
-}
+// .header {
+//   background: $brand-color-brighter-2;
+// }
 
 .rightList {
   width: 200px;
-  background: orange;
   display: flex;
   justify-content: space-between;
 }

@@ -54,11 +54,20 @@ Hyejung Lim's Portfolio as of 2021
 
 - [Deploying a React app to GitHub Pages](https://www.pluralsight.com/guides/deploying-github-pages-with-create-react-app)
 
-* **Fixing NPM errors**
+## 3-3 NPM
+
+- Fixing NPM errors
+
   - What worked for me
     - `sudo rm -rf /usr/local/lib/node_modules/` & Installed Node by running the package that I downloaded from the offcial [website](https://nodejs.org/en/download/)
   - Installing node & npm by using Homebrew didn't work
     - `brew update` => `brew uninstall node` & `brew install node` [출처](https://stackoverflow.com/a/46048072/10021131)
     - `sudo chmod -R 777 /usr/local/lib` => `brew postinstall node` [출처](https://stackoverflow.com/a/46048072/10021131)
+
+- `NPM Install`
+
+  - Install the dependencies in the local `node_modules` folder
+
+- [How to use font awesome icons with react](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react)
 
 2021 © Aspyn Lim

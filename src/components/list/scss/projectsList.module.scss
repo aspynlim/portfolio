@@ -1,0 +1,14 @@
+@import '../../../dist/scss/variables';
+
+.container {
+  margin: {
+    left: $container-margin;
+    right: $container-margin;
+  }
+}
+
+.fontAwesomeIcons {
+  font: {
+    size: 3em;
+  }
+}
