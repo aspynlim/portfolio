@@ -1,6 +1,10 @@
 import classes from './scss/FooterNav.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import {
+  faLinkedin,
+  faGithub,
+  faMedium,
+} from '@fortawesome/free-brands-svg-icons'
 
 function FooterNav() {
   return (
@@ -11,7 +15,7 @@ function FooterNav() {
             <a
               target="_blank"
               href="https://www.linkedin.com/in/hyejunglim/"
-              rel="noreferrer"
+              rel="LinkedIn noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -20,9 +24,18 @@ function FooterNav() {
             <a
               target="_blank"
               href="https://github.com/aspynlim"
-              rel="noreferrer"
+              rel="GitHub noreferrer"
             >
               <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://medium.com/@aspynlim"
+              rel="Medium noreferrer"
+            >
+              <FontAwesomeIcon icon={faMedium} />
             </a>
           </li>
         </ul>

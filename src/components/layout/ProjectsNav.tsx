@@ -8,14 +8,14 @@ function ProjectsNav() {
       <nav>
         <ul>
           <li>
-            <Link to="/projects">프로젝트</Link>
+            <Link to="/projects">Projects</Link>
           </li>
           <div className={classes.rightList}>
             <li>
-              <Link to="/projects/blog">블로그</Link>
+              <Link to="/projects/blog">Blog</Link>
             </li>
             <li>
-              <Link to="/projects/papago">파파고 번역</Link>
+              <Link to="/projects/papago">Papago</Link>
             </li>
             <li>
               <Link to="/projects/posinfluences">선한영향력</Link>

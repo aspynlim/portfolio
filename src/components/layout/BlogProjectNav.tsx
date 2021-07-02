@@ -8,7 +8,7 @@ function BlogProjectNav() {
       <nav>
         <ul>
           <li>
-            <Link to="/projects/blog">블로그</Link>
+            <Link to="/projects/blog">Blog</Link>
           </li>
           <div className={classes.rightList}>
             <li>
