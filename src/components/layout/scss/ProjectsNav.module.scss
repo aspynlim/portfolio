@@ -1,12 +1,7 @@
 @import '../../../dist/scss/styles';
 
-.header {
-  background: $brand-color-darker-2;
-}
-
 .rightList {
   width: 400px;
-  background: lightgreen;
   display: flex;
   justify-content: space-between;
 }

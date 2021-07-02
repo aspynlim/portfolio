@@ -4,7 +4,7 @@ import classes from './scss/ProjectsNav.module.scss'
 
 function ProjectsNav() {
   return (
-    <header className={classes.header}>
+    <header>
       <nav>
         <ul>
           <li>
