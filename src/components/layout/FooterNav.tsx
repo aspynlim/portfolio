@@ -8,10 +8,22 @@ function FooterNav() {
       <nav>
         <ul>
           <li>
-            <FontAwesomeIcon icon={faLinkedin} />
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/hyejunglim/"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon icon={faGithub} />
+            <a
+              target="_blank"
+              href="https://github.com/aspynlim"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
           </li>
         </ul>
       </nav>

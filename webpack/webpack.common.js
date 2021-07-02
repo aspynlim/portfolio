@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         // instead of "file-loader" in Webpack4
-        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        test: /\.(?:pdf|ico|gif|png|jpg|jpeg)$/i,
         type: 'asset/resource',
       },
       {
