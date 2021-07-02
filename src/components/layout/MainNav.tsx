@@ -8,8 +8,13 @@ function MainNav() {
       <nav>
         <ul>
           <li>
-            <Link to="/">
-              <img src={logo} alt="Website Logo" width="30" />
+            <Link to="/" className={classes.logoLink}>
+              <img
+                src={logo}
+                alt="Website Logo"
+                width="30"
+                className={classes.logo}
+              />
             </Link>
           </li>
           <div className={classes.rightList}>

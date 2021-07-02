@@ -1,7 +1,29 @@
+@import '../../../dist/scss/variables';
+
 .footer {
-  // background: bisque;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  background: $white;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      width: 200px;
+      span {
+        font: {
+          size: 0.75em;
+        }
+      }
+    }
+
+    ul {
+      width: 150px;
+    }
+  }
+}
+
+.socialMedia {
+  font: {
+    size: 20px;
+  }
 }

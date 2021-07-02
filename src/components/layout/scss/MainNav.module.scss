@@ -1,11 +1,16 @@
 @import '../../../dist/scss/styles';
 
-// .header {
-//   background: $brand-color-brighter-2;
-// }
-
 .rightList {
   width: 200px;
   display: flex;
   justify-content: space-between;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
 }
