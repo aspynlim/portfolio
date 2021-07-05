@@ -1,5 +1,5 @@
 function BlogProject() {
-  return <div>BlogProject</div>
+  return <div>BlogProject 설명</div>
 }
 
 export default BlogProject

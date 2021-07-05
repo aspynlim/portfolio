@@ -4,7 +4,7 @@ import classes from './scss/ProjectsNav.module.scss'
 
 function ProjectsNav() {
   return (
-    <header className={classes.header}>
+    <header>
       <nav>
         <ul>
           <li>
@@ -12,7 +12,7 @@ function ProjectsNav() {
           </li>
           <div className={classes.rightList}>
             <li>
-              <Link to="/projects/blog">Blogs</Link>
+              <Link to="/projects/blog">Blog</Link>
             </li>
             <li>
               <Link to="/projects/papago">Papago</Link>

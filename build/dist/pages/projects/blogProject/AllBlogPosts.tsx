@@ -1,38 +1,49 @@
+import { useState, useEffect } from 'react'
 import BlogPostList from '../../../components/blogPosts/BlogPostList'
-import { BlogPost } from '../../../components/Interfaces/BlogPost'
-
-const DUMMY_DATA: BlogPost[] = [
-  {
-    id: 'b1',
-    title: 'JavaScript ES6 Tutorials',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
-    description:
-      'Topics : Let, Default Parameters, Spread Operator, Template Strings, Object Literal Enhancements, New String Methods, Arrow Functions, Sets, Generators',
-  },
-  {
-    id: 'b2',
-    title: 'Asynchronous JavaScript',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
-    description:
-      'Topics : Ajax Request, Callback Functions, Promises, Generators',
-  },
-  {
-    id: 'b3',
-    title: 'Object Oriented JavaScript',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg',
-    description:
-      'Topics : Object Literals, Class Methods, Method Chaining, Class Inheritance, Constructors (under the hood), Prototype, Inheritance',
-  },
-]
+import classes from '../../scss/AllBlogPosts.module.scss'
 
 function AllBlogPosts() {
+  const [isLoading, setIsLoading] = useState(true)
+  const [loadedBlogPosts, setLoadedBlogPosts] = useState([])
+
+  useEffect(() => {
+    setIsLoading(true)
+
+    fetch(
+      'https://react-blog-26569-default-rtdb.asia-southeast1.firebasedatabase.app/blogPosts.json'
+    )
+      .then((response) => {
+        return response.json()
+      })
+      .then((data) => {
+        const blogPosts = []
+
+        for (const key in data) {
+          const blogPost = {
+            id: key,
+            ...data[key],
+          }
+
+          blogPosts.push(blogPost)
+        }
+
+        setIsLoading(false)
+        setLoadedBlogPosts(blogPosts)
+      })
+  }, [])
+
+  if (isLoading) {
+    return (
+      <section>
+        <p>Loading ...</p>
+      </section>
+    )
+  }
+
   return (
-    <div>
-      <h1>All Blog Posts</h1>
-      <BlogPostList items={DUMMY_DATA} />
+    <div className={classes.container}>
+      <h1>Blog Posts</h1>
+      <BlogPostList items={loadedBlogPosts} />
     </div>
   )
 }

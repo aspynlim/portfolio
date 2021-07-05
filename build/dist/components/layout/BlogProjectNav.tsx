@@ -4,7 +4,7 @@ import classes from './scss/BlogProjectNav.module.scss'
 
 function BlogProjectNav() {
   return (
-    <header className={classes.header}>
+    <header>
       <nav>
         <ul>
           <li>
