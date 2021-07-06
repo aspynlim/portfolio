@@ -76,6 +76,7 @@ Hyejung Lim's Portfolio as of 2021
 
 ## 3-5 Etc
 
+- [Favicon Generator](https://realfavicongenerator.net/)
 - [FREE Image Hosting](https://imgbb.com/)
 
 2021 © Aspyn Lim
