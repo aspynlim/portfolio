@@ -5,6 +5,15 @@ function AboutMe() {
     <div>
       <h1>About Me</h1>
       <CliftonStrengths />
+      <p>
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/1GqHlXnoBVMoRCRhZWRPVIaVCMK5vHyko/view?usp=sharing"
+          rel="Resume noreferrer"
+        >
+          이력서
+        </a>
+      </p>
     </div>
   )
 }
