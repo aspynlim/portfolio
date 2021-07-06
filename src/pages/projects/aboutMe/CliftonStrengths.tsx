@@ -7,7 +7,7 @@ function CliftonStrengths() {
         <h3>
           <a
             target="_blank"
-            href="https://www.gallup.com/ch2ftonstrengths/en/252197/connectedness-theme.aspx"
+            href="https://www.gallup.com/cliftonstrengths/en/252197/connectedness-theme.aspx"
             rel="Connectedness noreferrer"
           >
             Connectedness

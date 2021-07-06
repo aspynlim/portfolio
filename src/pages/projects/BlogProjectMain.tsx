@@ -6,25 +6,28 @@ import NewBlogPost from './blogProject/NewBlogPost'
 import FavoriteBlogPosts from './blogProject/FavoriteBlogPosts'
 
 import BlogProjectNav from '../../components/layout/BlogProjectNav'
+import { FavoritesContextProvider } from '../../store/favorites-context'
 
 function BlogProjectMain() {
   return (
     <div>
-      <BlogProjectNav />
-      <Switch>
-        <Route path="/projects/blog" exact>
-          <BlogProject />
-        </Route>
-        <Route path="/projects/blog/all">
-          <AllBlogPosts />
-        </Route>
-        <Route path="/projects/blog/new">
-          <NewBlogPost />
-        </Route>
-        <Route path="/projects/blog/favorites">
-          <FavoriteBlogPosts />
-        </Route>
-      </Switch>
+      <FavoritesContextProvider>
+        <BlogProjectNav />
+        <Switch>
+          <Route path="/projects/blog" exact>
+            <BlogProject />
+          </Route>
+          <Route path="/projects/blog/all">
+            <AllBlogPosts />
+          </Route>
+          <Route path="/projects/blog/new">
+            <NewBlogPost />
+          </Route>
+          <Route path="/projects/blog/favorites">
+            <FavoriteBlogPosts />
+          </Route>
+        </Switch>
+      </FavoritesContextProvider>
     </div>
   )
 }

@@ -22,7 +22,7 @@ function NewBlogPost() {
 
   return (
     <section>
-      <h1>Add New Meetup</h1>
+      <h1>Add New Blog Post</h1>
       <NewBlogPostForm onAddBlogPost={addBlogPostHandler} />
     </section>
   )
