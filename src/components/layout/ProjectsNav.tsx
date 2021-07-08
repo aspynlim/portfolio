@@ -1,26 +1,38 @@
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
+import { Link } from 'react-router-dom'
+import { MenuItems } from './MenuItems'
 import classes from './scss/ProjectsNav.module.scss'
 
 function ProjectsNav() {
+  const [isClicked, setIsClicked] = useState(false)
+
+  const handleClick = () => setIsClicked((prev) => !prev)
+
   return (
     <header>
       <nav>
-        <ul>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <div className={classes.rightList}>
-            <li>
-              <Link to="/projects/blog">Blog</Link>
-            </li>
-            <li>
-              <Link to="/projects/papago">Papago</Link>
-            </li>
-            <li>
-              <Link to="/projects/posinfluences">선한영향력</Link>
-            </li>
-          </div>
+        <ul
+          onClick={handleClick}
+          className={
+            isClicked
+              ? `${classes.dropdownMenu} ${classes.clicked}`
+              : `${classes.dropdownMenu} `
+          }
+        >
+          {MenuItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <Link
+                  className={item.className}
+                  to={item.path}
+                  onClick={() => setIsClicked(false)}
+                >
+                  {item.title}
+                </Link>
+              </li>
+            )
+          })}
         </ul>
       </nav>
     </header>
