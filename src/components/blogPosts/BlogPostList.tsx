@@ -1,7 +1,7 @@
 import BlogPostItem from './BlogPostItem'
 import { BlogPost } from '../Interfaces/BlogPost'
 import { BlogPostArray } from '../Interfaces/BlogPostArray'
-import classes from './scss/blogList.module.scss'
+import classes from './scss/blogPostList.module.scss'
 
 function BlogPostList(props: BlogPostArray) {
   return (

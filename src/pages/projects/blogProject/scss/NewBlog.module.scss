@@ -1,0 +1,8 @@
+@import '../../../../dist/scss/styles';
+
+.container {
+  margin: {
+    left: $container-margin;
+    right: $container-margin;
+  }
+}

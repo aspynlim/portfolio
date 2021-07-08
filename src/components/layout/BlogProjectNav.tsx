@@ -17,9 +17,6 @@ function BlogProjectNav() {
             <li>
               <Link to="/projects/blog/new">NEW</Link>
             </li>
-            {/* <li>
-              <Link to="/projects/blog/favorites">Favorites</Link>
-            </li> */}
           </div>
         </ul>
       </nav>

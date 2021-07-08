@@ -1,5 +1,5 @@
 import { useHistory } from 'react-router'
-
+import classes from './scss/NewBlog.module.scss'
 import NewBlogPostForm from '../../../components/blogPosts/NewBlogPostForm'
 
 function NewBlogPost() {
@@ -21,7 +21,7 @@ function NewBlogPost() {
   }
 
   return (
-    <section>
+    <section className={classes.container}>
       <h1>Add New Blog Post</h1>
       <NewBlogPostForm onAddBlogPost={addBlogPostHandler} />
     </section>

@@ -1,19 +1,72 @@
-@mixin blogButton {
+@import './_variables';
+
+// Common
+@mixin title {
+  font: {
+    size: $title;
+    weight: 600;
+  }
+  text-align: center;
+}
+
+@mixin subtitle {
+  font: {
+    size: $subtitle;
+    weight: 600;
+  }
+  margin: {
+    top: 0;
+  }
+}
+
+@mixin navHover {
+  li {
+    text-transform: uppercase;
+    &:hover {
+      font: {
+        weight: bold;
+      }
+    }
+  }
+}
+
+@mixin spanTitle {
+  display: inline-block;
+  margin: {
+    right: 10px;
+  }
+  color: $background-dark;
+}
+
+// Projects
+@mixin techSpecs($justify-content, $width) {
+  display: flex;
+  justify-content: $justify-content;
+  font: {
+    size: 2em;
+  }
+  width: $width;
+  margin: 1em auto;
+  color: $background-dark;
+}
+
+// Blog
+@mixin blogButton($color) {
   font: inherit;
   cursor: pointer;
-  color: $siren;
-  border: 1px solid $siren;
+  color: $color;
+  border: 1px solid $color;
   background-color: transparent;
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
   font-weight: bold;
 
   &:hover {
-    background-color: $siren;
+    background-color: $color;
     color: $white;
   }
   &:active {
-    background-color: $siren;
+    background-color: $color;
   }
 }
 

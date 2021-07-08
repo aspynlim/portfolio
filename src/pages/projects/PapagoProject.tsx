@@ -1,19 +1,43 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGitlab } from '@fortawesome/free-brands-svg-icons'
-import classes from '../scss/PapagoProject.module.scss'
+import classes from '../projects/scss/PapagoProject.module.scss'
+import javascript from '../../dist/images/brandLogos/javascript.svg'
+import java from '../../dist/images/brandLogos/java.svg'
+import mariaDB from '../../dist/images/brandLogos/mariaDB.svg'
+import jenkins from '../../dist/images/brandLogos/jenkins.svg'
+import aws from '../../dist/images/brandLogos/aws.svg'
 
 function PapagoProject() {
   return (
-    <div>
-      <h1>Papago Project</h1>
-      <a
-        target="_blank"
-        href="https://gitlab.com/aspynlim/jl-papago"
-        rel="GitHub noreferrer"
-        className={classes.socialMedia}
-      >
-        <FontAwesomeIcon icon={faGitlab} />
-      </a>
+    <div className={classes.container}>
+      <p className={classes.title}>파파고 번역 프로젝트</p>
+      <div className={classes.fontAwesomeIcons}>
+        <img src={java} alt="java" width="50" />
+        <img src={javascript} alt="javascript" width="30" />
+        <img src={mariaDB} alt="mariaDB" width="50" />
+        <img src={jenkins} alt="jenkins" width="30" />
+        <img src={aws} alt="aws" width="35" />
+      </div>
+      <div className={classes.actions}>
+        <a
+          target="_blank"
+          href="https://gitlab.com/aspynlim/jl-papago"
+          rel="GitHub noreferrer"
+          className={classes.socialMedia}
+        >
+          <button className={classes.button}>
+            <FontAwesomeIcon icon={faGitlab} />
+            <span>GitLab Repository</span>
+          </button>
+        </a>
+      </div>
+      <ul className={classes.analysis}>
+        <li>파파고 API 연동</li>
+        <li>회원가입</li>
+        <li>Log In/Out</li>
+        <li>데이터 추가 및 삭제</li>
+        <li>날짜별/사용자별/검색량별 정렬</li>
+      </ul>
     </div>
   )
 }

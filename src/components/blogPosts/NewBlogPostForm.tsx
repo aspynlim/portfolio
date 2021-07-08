@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 
 import Card from '../ui/Card'
-import classes from './scss/newBlogPostForm.module.scss'
+import classes from './scss/NewBlogPostForm.module.scss'
 
 function NewBlogPostForm(props) {
   const titleInputRef = useRef()

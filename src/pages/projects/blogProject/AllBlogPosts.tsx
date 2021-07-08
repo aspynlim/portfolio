@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import BlogPostList from '../../../components/blogPosts/BlogPostList'
-import classes from '../../scss/AllBlogPosts.module.scss'
+import classes from './scss/AllBlogPosts.module.scss'
 
 function AllBlogPosts() {
   const [isLoading, setIsLoading] = useState(true)

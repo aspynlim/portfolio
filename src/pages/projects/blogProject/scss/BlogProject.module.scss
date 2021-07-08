@@ -1,0 +1,41 @@
+@import '../../../../dist/scss/styles';
+
+.container {
+  margin: {
+    left: $container-margin;
+    right: $container-margin;
+  }
+}
+
+.title {
+  @include title;
+
+  margin: {
+    bottom: 30px;
+  }
+}
+
+.fontAwesomeIcons {
+  @include techSpecs(space-between, 300px);
+
+  // path {
+  //   fill: red;
+  // }
+}
+
+.analysis {
+  margin: {
+    top: 20px;
+    bottom: 30px;
+  }
+  text: {
+    align: center;
+  }
+  color: $background-light-2-dark-1;
+
+  li {
+    margin: {
+      top: 5px;
+    }
+  }
+}

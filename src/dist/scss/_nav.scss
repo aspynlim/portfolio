@@ -5,8 +5,8 @@ nav {
   display: flex;
   align-items: center;
   margin: {
-    left: 20px;
-    right: 20px;
+    left: $container-margin;
+    right: $container-margin;
     top: 10px;
   }
   background: {

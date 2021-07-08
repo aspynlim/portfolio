@@ -1,7 +1,12 @@
 @import './variables';
 
 a {
+  text-decoration: none;
+
   &:visited {
     color: $black;
+  }
+  &:hover {
+    color: $brand-color;
   }
 }

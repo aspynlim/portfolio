@@ -1,19 +1,12 @@
 import CliftonStrengths from './projects/aboutMe/CliftonStrengths'
+import MyHistory from './projects/aboutMe/MyHistory'
+import classes from './scss/AboutMe.module.scss'
 
 function AboutMe() {
   return (
-    <div>
-      <h1>About Me</h1>
+    <div className={classes.container}>
+      <MyHistory />
       <CliftonStrengths />
-      <p>
-        <a
-          target="_blank"
-          href="https://drive.google.com/file/d/1GqHlXnoBVMoRCRhZWRPVIaVCMK5vHyko/view?usp=sharing"
-          rel="Resume noreferrer"
-        >
-          이력서
-        </a>
-      </p>
     </div>
   )
 }

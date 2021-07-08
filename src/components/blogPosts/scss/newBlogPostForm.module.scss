@@ -1,5 +1,4 @@
-@import '../../../dist/scss/_variables';
-@import '../../../dist/scss/_mixins';
+@import '../../../dist/scss/styles';
 
 .form {
   padding: 1rem;
@@ -28,6 +27,6 @@
   text-align: right;
 
   button {
-    @include blogButton;
+    @include blogButton($brand-color);
   }
 }
