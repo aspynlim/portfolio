@@ -8,12 +8,12 @@ import {
 
 function FooterNav() {
   return (
-    <footer className={classes.footer}>
-      <nav>
-        <div>
+    <footer>
+      <nav className={classes.navBar}>
+        <div className={classes.leftNav}>
           <span>&#169; Hyejung(Aspyn) Lim 2021</span>
         </div>
-        <ul>
+        <ul className={classes.rightNav}>
           <li>
             <a
               target="_blank"

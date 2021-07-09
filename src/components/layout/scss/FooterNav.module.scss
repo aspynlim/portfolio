@@ -1,25 +1,27 @@
 @import '../../../dist/scss/styles';
 
-.footer {
+.navBar {
   background: $white;
 
-  nav {
-    display: flex;
-    justify-content: space-between;
+  @include navigation;
+}
 
-    div {
-      width: 200px;
-      span {
-        font: {
-          size: 0.75em;
-        }
-      }
-    }
+.leftNav {
+  display: flex;
+  align-items: center;
+  width: 200px;
 
-    ul {
-      width: 150px;
+  span {
+    font: {
+      size: 0.75em;
     }
   }
+}
+
+.rightNav {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
 }
 
 .socialMedia {

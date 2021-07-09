@@ -1,5 +1,9 @@
 @import '../../../dist/scss/styles';
 
+.navBar {
+  @include navigation;
+}
+
 .logoLink {
   display: flex;
   align-items: center;
@@ -9,13 +13,17 @@
   width: 100px;
 }
 
-// Dropdown
-.navMenu {
+.leftNav {
   display: flex;
+  padding-top: 6px;
 }
 
-.rightList {
+.navMenu {
   width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
 
   @include navHover;
 }

@@ -31,14 +31,10 @@ function MainNav() {
   }
 
   return (
-    <header className={classes.header}>
-      <nav className={classes.navbar}>
-        <div className={classes.leftList}>
-          <Link
-            to="/"
-            className={`${classes.logoLink} ${classes.navLinks}`}
-            onClick={closeMobileMenu}
-          >
+    <header>
+      <nav className={classes.navBar}>
+        <div className={classes.leftNav}>
+          <Link to="/" onClick={closeMobileMenu}>
             <img
               src={logo}
               alt="Website Logo"
@@ -53,7 +49,7 @@ function MainNav() {
         <ul
           className={
             isClicked
-              ? `${classes.navMenu} ${classes.active} ${classes.rightList}`
+              ? `${classes.navMenu} ${classes.active}`
               : `${classes.navMenu} `
           }
         >

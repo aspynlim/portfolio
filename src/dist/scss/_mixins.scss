@@ -1,5 +1,21 @@
 @import './_variables';
 
+// Header & Footer
+@mixin navigation {
+  display: flex;
+  justify-content: space-between;
+
+  height: 3rem;
+  margin: {
+    left: $container-margin;
+    right: $container-margin;
+    top: 10px;
+  }
+  background: {
+    color: $white;
+  }
+}
+
 // Common
 @mixin title {
   font: {
