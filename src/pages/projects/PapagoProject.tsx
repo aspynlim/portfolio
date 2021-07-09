@@ -37,6 +37,7 @@ function PapagoProject() {
         <li>Log In/Out</li>
         <li>데이터 추가 및 삭제</li>
         <li>날짜별/사용자별/검색량별 정렬</li>
+        <li>AWS로 Deploy</li>
       </ul>
     </div>
   )
