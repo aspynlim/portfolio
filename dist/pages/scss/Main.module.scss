@@ -1,0 +1,20 @@
+@import '../../dist/scss/variables';
+
+.mainBg {
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: {
+    color: $white;
+  }
+}
+
+.name {
+  margin-top: 0;
+}
+
+.quoteAuthor {
+  margin-top: 0;
+  font-size: 0.8em;
+}
