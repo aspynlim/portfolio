@@ -1,0 +1,53 @@
+@import '../../../dist/scss/styles';
+
+.container {
+  margin: {
+    left: $container-margin;
+    right: $container-margin;
+  }
+}
+
+.title {
+  margin: {
+    bottom: 35px;
+  }
+
+  @include title;
+}
+
+.fontAwesomeIcons {
+  @include techSpecs(center, 100px);
+}
+
+.actions {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.button {
+  @include blogButton($brand-color);
+
+  span {
+    display: inline-block;
+    margin: {
+      left: 10px;
+    }
+  }
+}
+
+.analysis {
+  margin: {
+    top: 15px;
+    bottom: 30px;
+  }
+  text: {
+    align: center;
+  }
+  color: $background-light-2-dark-1;
+
+  li {
+    margin: {
+      top: 5px;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@import '../../../../dist/scss/styles';
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  @include title;
+
+  margin: {
+    top: 30px;
+  }
+}
+
+.actions {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.button {
+  @include blogButton($brand-color);
+}
+
+.subtitle {
+  @include subtitle;
+}
+
+.experiences {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.experience {
+  width: 500px;
+  min-width: 100px;
+  padding: 1.75em 1.75em 2em 2.25em;
+  text-align: center;
+}
+
+.jobTitle {
+  color: $brand-color;
+}
+
+.jobResponsibilities {
+  text: {
+    align: left;
+  }
+  li {
+    list-style-type: circle;
+    margin: {
+      left: 20px;
+    }
+  }
+}
+
+.educationHistory {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.education {
+  width: 400px;
+  padding: 2em;
+  text-align: center;
+}
+
+.degree {
+  color: $brand-color;
+
+  margin: {
+    bottom: 0;
+  }
+
+  &:last-child {
+    margin: {
+      top: 5px;
+    }
+  }
+}

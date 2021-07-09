@@ -1,0 +1,55 @@
+@import '../../../../dist/scss/styles';
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  @include title;
+
+  margin: {
+    top: 30px;
+  }
+}
+
+.strengths {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.strength {
+  width: 500px;
+  min-width: 100px;
+  padding: 1.75em 1.75em 2em 1.75em;
+  text-align: center;
+}
+
+.subtitle {
+  @include subtitle;
+}
+
+.themeType {
+  @include spanTitle;
+}
+.theme {
+  color: $brand-color;
+}
+
+.definition {
+  @include spanTitle;
+}
+.explanation {
+  font: {
+    weight: 600;
+  }
+}
+
+.quote {
+  color: $brand-color-darker-1;
+  font: {
+    style: italic;
+    size: 0.9em;
+  }
+}

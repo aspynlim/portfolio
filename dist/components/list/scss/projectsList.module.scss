@@ -1,0 +1,52 @@
+@import '../../../dist/scss/styles';
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  margin: {
+    left: $container-margin;
+    right: $container-margin;
+  }
+}
+
+.title {
+  @include title;
+
+  margin: {
+    top: 30px;
+  }
+}
+
+.subtitle {
+  @include subtitle;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 500px;
+  min-width: 100px;
+  padding: 1.75em 1.75em 2em 2.25em;
+  text-align: center;
+}
+
+.fontAwesomeIcons {
+  @include techSpecs(space-between, 300px);
+
+  margin: {
+    bottom: 0 !important;
+  }
+}
+
+.fontAwesomeIconsSingle {
+  @include techSpecs(center, 300px);
+
+  margin: {
+    bottom: 0 !important;
+  }
+}

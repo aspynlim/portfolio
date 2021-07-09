@@ -1,0 +1,29 @@
+@import '../../../dist/scss/styles';
+
+.footer {
+  background: $white;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      width: 200px;
+      span {
+        font: {
+          size: 0.75em;
+        }
+      }
+    }
+
+    ul {
+      width: 150px;
+    }
+  }
+}
+
+.socialMedia {
+  font: {
+    size: 20px;
+  }
+}

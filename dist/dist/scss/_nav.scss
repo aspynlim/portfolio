@@ -1,0 +1,23 @@
+@import './variables';
+
+nav {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  margin: {
+    left: $container-margin;
+    right: $container-margin;
+    top: 10px;
+  }
+  background: {
+    color: $white;
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+}
