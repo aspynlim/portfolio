@@ -32,12 +32,13 @@ function PapagoProject() {
         </a>
       </div>
       <ul className={classes.analysis}>
-        <li>파파고 API 연동</li>
+        <li>네이버 파파고 API 연동</li>
         <li>회원가입</li>
         <li>Log In/Out</li>
-        <li>데이터 추가 및 삭제</li>
-        <li>날짜별/사용자별/검색량별 정렬</li>
-        <li>AWS로 Deploy</li>
+        <li>DB에 데이터 추가 및 삭제</li>
+        <li>단어 검색</li>
+        <li>날짜별/사용자별/검색량별/언어별 정렬</li>
+        <li>Jenkins 및 AWS로 Deploy</li>
       </ul>
     </div>
   )

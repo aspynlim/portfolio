@@ -137,7 +137,7 @@ function CliftonStrengths() {
             </p>
             <ul className={classes.quote}>
               <li>
-                &quot; Have a natural talent to apperciate and create an order
+                &quot; Have a natural talent to appreciate and create an order
                 and a structure &#34;
               </li>
             </ul>

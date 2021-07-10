@@ -12,6 +12,7 @@ import sass from '../../dist/images/brandLogos/sass.svg'
 import react from '../../dist/images/brandLogos/react.svg'
 import typescript from '../../dist/images/brandLogos/typescript.svg'
 import firebase from '../../dist/images/brandLogos/firebase.svg'
+import webpack from '../../dist/images/brandLogos/webpack.svg'
 
 import figma from '../../dist/images/brandLogos/figma.svg'
 
@@ -28,6 +29,7 @@ function ProjectsList() {
               <img src={typescript} alt="typescript" width="35" />
               <img src={firebase} alt="firebase" width="30" />
               <img src={sass} alt="sass" width="40" />
+              <img src={webpack} alt="webpack" width="40" />
             </div>
           </div>
         </Card>
